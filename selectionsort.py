@@ -1,6 +1,10 @@
 import random
 
 
+## 选择排序的思想：在每次循环中找到最小的那个元素的索引，将它与该次循环
+## 的最开始位置的元素交换即依次将最小、次小、次次小的元素往前排
+## O(n^2)选择排序是稳定的排序
+
 def selectionsort(lst,length):
     for i in range(0,length):
         min_index = i  #将i先视作未排序序列的最小值的索引
